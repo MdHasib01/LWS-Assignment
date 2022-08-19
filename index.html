@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Counter Application</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- import redux from cdn -->
@@ -17,24 +17,18 @@
       </h1>
 
       <!-- counters -->
-      <div class="max-w-md mx-auto mt-10 space-y-5">
-        <div id="counters">
-          <!-- show counters here  -->
-        </div>
-
-        <div class="h-auto bg-transparent flex justify-end">
-          <div class="flex space-x-3">
-            <button class="bg-indigo-400 text-white px-3 py-2 rounded shadow" id="add_counter">
-              + Add Counter
-            </button>
-            <button class="bg-red-400 text-white px-3 py-2 rounded shadow" id="reset">
-              Reset
-            </button>
-          </div>
-        </div>
+      <div class="max-w-md mx-auto mt-10 space-y-5" id="parentCounter"></div>
+      <!--add and reset button group-->
+      <div class="max-w-md mx-auto mt-1 space-y-5 text-right">
+        <button class="bg-indigo-400 text-white px-3 py-2 rounded shadow capitalize" id="addCounterBtn">
+          +Add counter
+        </button>
+        <button class="bg-indigo-400 text-white px-3 py-2 rounded shadow capitalize" id="resetBtn">
+          reset
+        </button>
       </div>
     </div>
-
+    
     <script src="./script.js"></script>
   </body>
 </html>
